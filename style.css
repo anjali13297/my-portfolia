@@ -163,7 +163,43 @@ body{
     height: 3px;
     background: linear-gradient(45deg, #f64c57, #f64c57);
 }
+.about h2{
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
 .about p{
     color: #555;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
+}
+.about .work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.work .workbox{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+}
+.workbox .about-img{
+    /* max-width: 40%; */
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.work .workbox .desc{
+    width: 75%;
+    color: #555;
+}
+.work .workbox .desc h3{
+    color: #f2f2f2;
+    margin-bottom: 3px;
+}
+.work .workbox .desc p{
+    margin: 0px;
 }
