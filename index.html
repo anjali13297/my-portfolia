@@ -1,99 +1,253 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!--Style sheet-->
     <link rel="stylesheet" href="style.css">
-    <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 </head>
+
 <body>
-    <div class="container">
-        <div class="pro-card">
-            <div class="pro-pic">
-                <img class="pro-img" src="Image/20180207_141245(1).jpg " alt="protfoliopic">
-            </div>
-            <div class="pro-details">
-                <div class="intro">
-                    <h2>Anjali Patel</h2>
-                    <h4>Software Developer</h4>
-                    <div class="social">
-                        <a href="#"><i class="fab fa-linkedin" style="color: var(--blue);"></i></a>
-                        <a href="#"><i class="fab fa-facebook" style="color: var(--skyblue);"></i></a>
-                        <a href="#"><i class="fab fa-github" style="color: var(--blue);"></i></a>
-                        <a href="#"><i class="fab fa-twitter" style="color: var(--dark-magenta);"></i></a>
-                    </div>
-                </div>
-                <div class="contact-intro">
-                    <div class="row">
-                        <div class="icon">
-                            <i class="fa fa-phone" style="color: var(--dark-magenta);"></i>
-                        </div>
-                        <div class="content">
-                            <span>Phone</span>
-                            <h5>+91 848 785 2174</h5>
-                        </div>
-                    </div>
+    <nav>
+        <a href="#" class="logo"><span>Anjali Patel</span></a>
 
-                    <div class="row">
-                        <div class="icon">
-                            <i class="fa fa-envelope-open" style="color: var(--light-green);"></i>
-                        </div>
-                        <div class="content">
-                            <span>Email</span>
-                            <h5>anjali13297@gmail.com</h5>
-                        </div>
-                    </div>
+        <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+           <li> <a href="#projects">Projects</a></li>
+           
+            <!-- <a href="#contact">Contact</a> -->
+        </ul>
 
-                    <div class="row">
-                        <div class="icon">
-                            <i class="fa fa-map-marker" style="color: var(--light-purple);"></i>
-                        </div>
-                        <div class="content">
-                            <span>Location</span>
-                            <h5>Ahmedabad, Gujarat, India</h5>
-                        </div>
-                    </div>
-                </div>
-                <button class="downlod"> Download CV</button>
-            </div>
-        </div>
-        <!--About-->
-        <div class="about">
-            <h1>About Me</h1>
-            <p>I'm Software Developer. I enjoy turning complex problems into simple, beautiful and intuitive app.</p>
-            <p>Seeking Opportunity, ready to use my 
-                software skills, and innovative ideas and knowledge skills technical Skills to give our best for 
+        <i class="fa-solid fa-bars" id="menu" onclick="openMenu()"></i>
+        <i class="fa-solid fa-xmark" id="close" onclick="closeMenu()"></i>
+        <a href="#contact" class="btn">Contact Me</a>
+    </nav>
+
+    <section id="home">
+        <img src="Images/new_profile_pic2_ed.jpeg" alt="profilepic">
+
+        <div class="info-box">
+            <!-- <h1><span>Anjali Patel</span></h1> -->
+            <h3><span>Software Developer</span></h3>
+            <p>I'm web designer & Front-end developer focused on crafting clean & user- friendly experiences.
+                I am passionate about building excellent software.</p>
+            <p>Seeking Opportunity, ready to use my
+                software skills, and innovative ideas and knowledge skills technical Skills to give our best for
                 company growth and Organization.
             </p>
-            <h2>My Projects !!!</h2>
-            <div class="work">
-                <div class="workbox">
-                    <div class="icon">
-                        <img class="about-img" src="Image/chat.png" alt="chat app">
-                    </div>
-                    <div class="desc">
-                        <h3>Connection Zone.</h3>
-                        <p>Connection zone application is easy-to-use messaging application for effective communications.
-                           It correctly identifies and works under android operating system with unlimited user account.
-                            It is a server based messaging application for effective communication.</p>
-                        <!-- <p>Android Application</p> -->
+            <a href="Files/Anjali Patel.pdf" target="_blank" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <section id="about">
+
+        <div class="about-box">
+
+            <div class="about-info">
+                <h2><span>About Me</span></h2>
+                <p>I'm web designer & Front-end developer focused on crafting clean & user- friendly experiences.<br>
+                    I am passionate about building excellent software.</p>
+                <p>Seeking Opportunity, ready to use my
+                    software skills, and innovative ideas and knowledge skills<br> technical Skills to give our best for
+                    company growth and Organization.
+                </p>
+            </div>
+            <h2><span>Skills</span></h2>
+            <!-- <div class="skill-bOX">
+                 <h2 class="title">HTML</h2>
+                <div class="skill-bar">
+                    <div class="html">
+                        <span>
+                            76%
+                        </span>
                     </div>
                 </div>
-                <div class="workbox">
-                    <div class="icon">
-                        <img class="about-img" src="Image/food-waste2.jpg" alt="chat app">
-                    </div>
-                    <div class="desc">
-                        <h3>Reduce Food Waste.</h3>
-                        <p>This project is used to manage wastage foods in a useful way. Every day the people are wasting lots of foods. So we have to reduce that food wastage problem through online. If anyone have wastage foods they are entering their food quantity details and their address in that application and then the admin maintain the details of food donator.</p>
-                        <!-- <p>React Js A</p> -->
+                <h2 class="title">CSS</h2>
+                <div class="skill-bar">
+                    <div class="css">
+                        <span>
+                            70%
+                        </span>
                     </div>
                 </div>
+                <h2 class="title">Javascript</h2>
+                <div class="skill-bar">
+                    <div class="javascript">
+                        <span>
+                            65%
+                        </span>
+                    </div>
+                </div>
+                <h2 class="title">Canva</h2>
+                <div class="skill-bar">
+                    <div class="canva">
+                        <span>
+                            60%
+                        </span>
+                    </div>
+                </div>
+                <h2 class="title">React</h2>
+                <div class="skill-bar">
+                    <div class="react">
+                        <span>
+                            58%
+                        </span>
+                    </div>
+                </div>
+                <h2 class="title">PHP</h2>
+                <div class="skill-bar">
+                    <div class="php">
+                        <span>
+                            50%
+                        </span>
+                    </div>
+                </div>
+            </div> -->
+            <div class="skills">
+                <ul>
+                    <li><span>HTML</span></li>
+                    <li><span>CSS</span></li>
+                    <li><span>Javascript</span></li>         
+                    <li><span>React</span></li>
+                    <li><span>PHP</span></li>
+                    <li><span>Canva</span></li>
+                </ul>
+
+                <!-- <img src="Images/Picsart_25-03-08_00-45-36-889.jpg" alt="aboutimg"> -->
+            </div>
+        </div>
+
+    </section>
+
+    <section id="services">
+        <h2 class="services_text"><span>Services</span></h2>
+
+        <div class="services_container">
+            <div class="box">
+                <h3><span>Front End Developer</span></h3>
+                <p>As a front-end developer designs and builds the part of a website or application that users see and
+                    interact with. using HTML, CSS, and JavaScript to create the user interface. </p>
+
+
+                <img src="Images/frontend.jpg" alt="Frontend">
+            </div>
+
+            <div class="box">
+                <h3><span>SEO Executive</span></h3>
+                <p>AS an SEO (Search Engine Optimization) executive is responsible for improving a website's visibility and
+                    search rankings. They use a variety of strategies to increase organic traffic.</p>
+
+
+                <img src="Images/Seo.jpg" alt="SEO">
+            </div>
+
+            <div class="box">
+                <h3><span>Graphic Designer</span></h3>
+                <p>AS an Graphic Designer  Design logos, card, and social media post</p>
+
+
+                <img src="Images/benefits-graphic-designer.png" alt="SEO">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2 class="services_text"><span>Projects</span></h2>
+
+        <div class="projects_container">
+
+             <div class="box">
+                <h3><span>Connection Zone.</span></h3>
+                <p>Connection zone application is easy-to-use messaging application for effective communications.
+                    It correctly identifies and works under android operating system with unlimited user account.
+                    It is a server based messaging application for effective communication. </p>
+                <p>Language:- <span>Android, Java</span></p>
+                
+                <!-- <img src="Images/chat.png" alt="ChatApp"> -->
+            </div>
+
+            <div class="box">
+                <h3><span>Reduce Food Waste.</span></h3>
+                <p>This project is used to manage wastage foods in a useful way. Every day the people are wasting lots of
+                    foods. So we have to reduce that food wastage problem through online. If anyone have wastage foods they
+                    are entering their food quantity details and their address in that application and then the admin maintain
+                    the details of food donator.</p>
+                <p>Language:- <span>MERN</span></p>
+                <!-- <img src="Images/food-waste2.jpg" alt="Food_App"> -->
+            </div>
+
+
+            <div class="box">
+                <h3><span>My Music Player</span></h3>
+                <p>Music Player is a application that allows users to listen to music offline. </p>
+                <p>Language:- <span>HTML, CSS And JavaScript</span></p>
+                <p>Link:- <span><a href="https://elegant-fox-e7f758.netlify.app/">https://elegant-fox-e7f758.netlify.app/</a></span></p>
+            </div>
+
+            <div class="box">
+                <h3><span>Quiz App</span></h3>
+                <p>Simple Quiz application </p>
+                <p>Language:- <span>HTML, CSS And JavaScript</span></p>
+                <p>Link:- <span><a href="https://capable-churros-efb018.netlify.app/">https://capable-churros-efb018.netlify.app/</a></span></p>
+                                    
+            </div>
+
+            <div class="box">
+                <h3><span>Automatic Slider</span></h3>
+                <p>Images Moves Automatic.</p>
+                <p>Language:- <span>HTML, CSS And JavaScript</span></p>
+                <p>Link:- <span><a href="https://kaleidoscopic-sherbet-8bcc58.netlify.app/">https://kaleidoscopic-sherbet-8bcc58.netlify.app/</a></span></p>
+                                    
+            </div>
+
+            <div class="box">
+                <h3><span>To-Do List</span></h3>
+                <p>using this application you can create To-do List.</p>
+                <p>Language:- <span>HTML, CSS And JavaScript</span></p>
+                <p>Link:- <span><a href="https://inspiring-moonbeam-f94f64.netlify.app/">https://inspiring-moonbeam-f94f64.netlify.app/</a></span></p>
+                                    
+            </div>
+
+           
+
+        </div>
+
+    </section>
+
+    <div id="contact">
+        <div class="col-left">
+            <div class="col-box">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>anjali.p13@yahoo.com</span>
+            </div>
+            <div class="col-box">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span>+91 848 785 2174</span>
+            </div>
+            <div class="col-box">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>New Maninagar, Ahmedabad</span>
+            </div>
+        </div>
+        <div class="col-right">
+            <span>About Me</span>
+            <p>I'm web designer & Front-end developer focused on crafting clean & user- friendly experiences.
+                I am passionate about building excellent software.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/anjali-patel-b87583215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://www.instagram.com/er.anjali_patel/" target="_blank" class="fab fa-instagram"></a>
+                <a href="https://github.com/anjali13297" target="_blank" class="fab fa-github"></a>
+                <a href="#" class="fab fa-twitter"></a>
             </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
